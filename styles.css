@@ -17,6 +17,12 @@ header {
     
 }
 
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+
+}
+
 .nav-link {
     text-decoration: none;
     line-height: 2rem;
@@ -92,8 +98,26 @@ header {
 
 @media (min-width: 750px) {
 
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 7rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 2rem;
+    }
+
     #features {
-        padding: 1rem;
+        padding: 0 5rem;
     }
 
     .features-content {

@@ -10,21 +10,23 @@
 <body>
 
     <header id="header">
-    <img id="header-img" class="logo" src="https://icons8.com/icon/KDXWItM2G28f/hatchback" />
+    <div class="logo">
+        <i class="fa-solid fa-car">DeeAutos</i>
+    </div>
 
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#shop">Shop</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
         <li><a class="nav-link" href="#shipment">Shipment</a></li>
       </ul>
     </nav>
   </header>
-<section id="home">
+<section id="hero-section">
   <h1>Welcome to our car dealership</h1>
   <form id="form" action="https://www.freecodecamp.com/email-submit">
-  <input id="email" name="email" type="email" placeholder="Enter your email address">
-  <input id="submit" type="submit">
+    <input id="email" name="email" type="email" placeholder="Enter your email address">
+    <Button id="hero-btn">Get Started</Button>
   </form>
 </section>
 
@@ -32,23 +34,39 @@
 <iframe class="video" src="https://www.youtube.com/embed/nDgbw--mLMs" title="2024 Hyundai Sonata Exterior and Interior Walkaround" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
-<div id="services">
-    <div class="services-content">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <p>Find your dream car</p>
+<section id="features">
+    <div class="features-content">
+        <div class="feature-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="feature-text">
+            <h2>Luxury cars</h2>
+            <p>Our dealership has a collection of the worlds most limited cars as well as vintage dating back to as old as when cars were first invented. Our customers are guranteed best auto purchase outlet.</p>
+        </div>
     </div>
 
-    <div class="services-content">
-        <i class="fa-solid fa-calendar-check"></i>
-        <p>Book an appointment</p>
+    <div class="features-content">
+        <div class="feature-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="feature-text">
+            <h2>Fast Delivery</h2>
+            <p>We make sure you recieve your car as fast as you ordered it, usually within 24 hours of purchase within the Unied states or 56hours worldwide.</p>
+        </div>
+    </div>
+    
+    <div class="features-content">
+        <div class="feature-icon">
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="feature-text">
+            <h2>Guarantee</h2>
+            <p>Every brand of car purchased from us comes with a manufacturers guarentee and insurance plan, our long time clients are very pleased to do business with us.</p>
+        </div>
     </div>
 
-    <div class="services-content">
-        <i class="fa-solid fa-truck"></i>
-        <p>We deliver with 24 hours.</p>
-    </div>
-
-</div>
+    
+</section>
 
 <section id="shop">
 

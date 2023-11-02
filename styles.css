@@ -12,14 +12,18 @@ body {
 }
 
 header {
+    background-color: #ddd;
     text-align: center;
     line-height: 3rem;
+    position: fixed;
+    width: 100%;
     
 }
 
 .logo {
     font-size: 1.2rem;
     font-weight: 800;
+    cursor: pointer;
 
 }
 
@@ -31,7 +35,8 @@ header {
 }
 
 #hero-section {
-    padding: 100px 0;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
     width: 100%;
     text-align: center;
     /* background-color: #001C30; */
@@ -61,13 +66,14 @@ header {
     margin: 0 auto;
     padding: 0 .5rem;
     overflow: hidden;
+    text-align: center;
     /* position: relative; */
 }
 
 
  .video {
     aspect-ratio: 16 / 9;
-  width: 100%;
+  width: 90%;
 }
 
 #features {
@@ -88,9 +94,51 @@ header {
     color: #F94C10;
 }
 
+#pricing {
+    margin: 5rem 0;
+}
+
+.price-card {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0 1rem;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.card-heading {
+    background-color: #ddd;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.amount {
+ 
+    color: #F94C10;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.descripion {
+    padding: 2rem 2rem;
+}
+
+.card-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #F8DE22;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
 #footer {
-    background-color: #001C30;
-    color: #fff;
+    background-color: #ddd;
+    color: #000;
     padding: 1rem 2rem;
     text-align: center;
 }
@@ -98,8 +146,11 @@ header {
 
 @media (min-width: 750px) {
 
+    /* navigation area on large screens */
+
     .logo {
         font-size: 1.5rem;
+        cursor: pointer;
     }
 
     header {
@@ -115,6 +166,11 @@ header {
         list-style: none;
         gap: 2rem;
     }
+
+    #hero-section {
+        padding: 100px 0;
+    }
+
 
     #features {
         padding: 0 5rem;
@@ -136,6 +192,33 @@ header {
 
     .feature-text {
         width: 85%;
+    }
+
+    #video-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #pricing {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 5rem 0;
+    }
+
+    .card-heading {
+        margin: 0;
+    }
+
+    .price-card {
+        width: 33.33%;
+        padding: 0;
     }
     
 }
